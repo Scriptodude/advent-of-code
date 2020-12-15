@@ -5,7 +5,7 @@ val seen = mutableMapOf<Int, Int>()
 var previousOne = data.first()
 seen.put(previousOne, 0)
 
-(1..2020).forEach {
+(1..30_000_000).forEach {
     if (it <= data.size) {
         seen.put(previousOne, it)
         previousOne = data[it - 1]
